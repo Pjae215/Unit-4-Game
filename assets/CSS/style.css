@@ -1,0 +1,20 @@
+body {
+background-color: white;
+}
+
+header {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 225%;
+font-weight: bold;
+color: rgb(0, 77, 128);
+}
+
+#randomnumber {
+color: green;
+
+}
+.crystalimage {
+width: 300px;
+height: 200px;
+}
+
