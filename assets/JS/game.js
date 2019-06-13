@@ -53,5 +53,6 @@ var numbertoguess = Math.floor(Math.random() * 102) + 19;
     else if (counter >= numbertoguess) {
       alert("You lose!!");
     }
+    // need to add reset function to start game over when user wins or loses
 
 });

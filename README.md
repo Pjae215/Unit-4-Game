@@ -45,11 +45,6 @@ CrystalsCollector Game (Recommended)
 
 * Each crystal should have a random hidden value between 1 - 12.
 
-### Reminder: Submission on BCS
-
-* Please submit both the deployed Github.io link to your homework AND the link to the Github Repository!
-
-- - -
 
 ### Minimum Requirements
 
