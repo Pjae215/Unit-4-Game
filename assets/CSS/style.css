@@ -2,11 +2,27 @@ body {
 background-color: white;
 }
 
+p {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 100%;
+text-align: center;
+color: black;
+font-weight: bold;
+}
+
 header {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 225%;
+font-size: 200%;
 font-weight: bold;
 color: rgb(0, 77, 128);
+}
+
+h2 {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 50%;
+text-align: center;
+color: black;
+font-weight: bold;
 }
 
 #randomnumber {

@@ -12,31 +12,30 @@ var numbertoguess = Math.floor(Math.random() * 102) + 19;
   var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
   // so that options can repeat
-  for (var i = 0; i < numberOptions.length; i++) {}
+  for (var i = 0; i < numberOptions.length; i++) {
 
-    //
-   // var img1 = $("#image1");
-    //var img2 = $("#image2");
-    //var img3 = $("#image3");
-    //var img4 = $("#image4"); 
+    
 
-//assigning a random value from the options to each image 
+//creating a function that pulls a random number from the array 
     var min = 0
     var max = (numberOptions.length - 1)
-    var randIndex = Math.floor(Math.random() * (max - min)) + min;
+    
+    function randomindex () {
+      var randIndex = Math.floor(Math.random() * (max - min)) + min;
+      return randIndex
+    }
+//applies the function to image
+    $("#image1").attr("crystalvalue",numberOptions[randomindex()]);
+    $("#image2").attr("crystalvalue",numberOptions[randomindex()]);
+    $("#image3").attr("crystalvalue",numberOptions[randomindex()]);
+    $("#image4").attr("crystalvalue",numberOptions[randomindex()]);
+  }
 
-    $("#image1").attr("crystalvalue",numberOptions[randIndex]);
-    $("#image2").attr("crystalvalue",numberOptions[randIndex]);
-    $("#image3").attr("crystalvalue",numberOptions[randIndex]);
-    $("#image4").attr("crystalvalue",numberOptions[randIndex]);
-
-
-  // need to figure out how to get function AND value to apply to each image
+  // clicking a crystal calls for the image value that was assigned by the function
   $(".crystalimage").on("click", function() {
-
+    
     var imagevalue = ($(this).attr("crystalvalue"));
     imagevalue = parseInt(imagevalue);
-
 
     // adding image value to the counter each time the image is clicked 
     counter += imagevalue;
@@ -47,12 +46,12 @@ var numbertoguess = Math.floor(Math.random() * 102) + 19;
 
     // if the counter is less than the number to guess you win...if equal or over you lose
     if (counter === numbertoguess) {
-      alert("You win!");
+      alert("You win!...Refresh page to play again");
     }
 
     else if (counter >= numbertoguess) {
-      alert("You lose!!");
+      alert("You lose!!...Refresh page to play again");
     }
-    // need to add reset function to start game over when user wins or loses
+    // user manually resets game if they want to play again
 
 });
