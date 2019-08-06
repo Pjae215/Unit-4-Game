@@ -10,11 +10,24 @@ color: black;
 font-weight: bold;
 }
 
-header {
+.left {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 200%;
+font-size: 80%;
 font-weight: bold;
+width: 40%;
 color: rgb(0, 77, 128);
+float: left;
+text-align: center;
+}
+
+.right {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+    width: 40%;
+    font-weight: bold;
+    color: rgb(0, 77, 128);
+    float: right;
+    text-align: left;
 }
 
 h2 {
@@ -27,10 +40,21 @@ font-weight: bold;
 
 #randomnumber {
 color: green;
-
 }
+
+#yourscore {
+    color: black;
+}
+
+#yourwins {
+    color: green;
+}
+#yourlosses {
+        color: red;
+}
+
 .crystalimage {
-width: 300px;
+width: 350px;
 height: 200px;
 }
 
